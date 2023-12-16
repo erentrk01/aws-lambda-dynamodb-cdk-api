@@ -2,6 +2,9 @@
 ## Welcome to your CDK TypeScript project
 
 This is a project for CDK development with TypeScript.
+## Prerequisites
+You’ll need to have an AWS account, as well as the AWS CLI and CDK, configured on your local machine. You will also need a CDK project initialized locally.
+
 ## Credits
 
 This project was developed based on the tutorials by [conermurphy]
@@ -43,7 +46,12 @@ This project includes a REST API deployed on AWS API Gateway. The base URL for t
     - `x-api-key`: Your API key
 - **Response**:
   - Status Code: 200 OK
-  - Body: Post object
+  - Body: {
+  "title": "Example post 1",
+  "description": "",
+  "author": "me",
+  "publicationDate": "some-date"
+}
 
 #### Create a Post
 
